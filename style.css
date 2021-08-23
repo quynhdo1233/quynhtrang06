@@ -1,0 +1,366 @@
+/* reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font_while{
+    color: #fff !important;
+}
+#header{
+ height: 46px;
+ background-color: black;
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 1;
+}
+#slider .text-contain{
+    bottom: 48px;
+    color:#ccc;
+    position:absolute;
+    text-align: center;
+    width: 100%;
+}
+#nav{
+ display: inline-block;
+}
+#nav>li{
+    display: inline-block; 
+}
+#nav >li{
+    position: relative;
+}
+#nav >li>a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav ,.subnav{
+    list-style-type: none;
+}
+#nav li a{
+
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+#nav >li:hover .subnav{
+    display: block;
+}
+#nav>li:hover>a{
+    color: #000;
+    background-color: #ccc;
+}
+.arrow{
+    font-size: 12px;
+}
+#header .search-button{
+    float: right;
+}
+#header .search-button:hover{
+   background-color: #f44336;
+   cursor: pointer;
+}
+#header .search-icon{
+    font-size: 20px;
+    color: white;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#nav .subnav{
+    min-width: 160px;
+    top:100%;
+    left:0px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 36px; 
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('./asset/img/wallpaper-4k-hinh-nen-4k-con-duong-mua-thu-dep_101306352.jpg') top center / cover no-repeat;
+    transform: translateY(0);
+}
+#content .selection_contain{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+#content .text_heading{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    font-size: 30px;
+}
+#content .text_sub_heading{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 15px 0px;
+}
+#content .about_text{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+#content .member-list{
+    padding: 32px 0px;
+    overflow: hidden;
+}
+#content .member-name{
+    margin:15px 0px;
+    font-size: 15px;
+}
+#content .member_img{
+    display:inline-block;
+    width: 154px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.tour-selection{
+    background-color: #000;
+}
+.tour-selection .text_heading{
+    padding-top: 64px;
+}
+.tour-selection .tickit{
+    background-color: #fff;
+    margin-top: 30px;
+    list-style-type: none;
+}
+.selection_contain .tickit{
+    font-size: 15px;
+}
+.tickit li{
+    line-height: 22px;
+    padding: 8px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ccc ;
+}
+.tickit .sold-out{
+    background-color:#f44336;
+    color: #fff;
+    padding: 2px 8px;
+    margin: 0px 16px;
+}
+.tickit .cricle{
+    background-color: black;
+    padding: 0px 8px;
+    border-radius: 50%;
+    color: #fff;
+    float: right;
+    margin-right: 16px;
+}
+.place_list .place_body{
+   background-color: #fff;
+   padding: 16px;
+}
+.place_list{
+ margin:32px -8px 0px;
+ overflow: hidden;
+}
+.place_item{
+    width:calc(100%/3);
+    float: left;
+    padding: 0px 8px;
+}
+.place_img{
+   width:100%;
+   display: block;
+}
+.place_img:hover{
+    opacity: 0.6;
+}
+.place_heading{
+    font-size: 15px;
+    font-weight: 550;
+}
+.place_date{
+ font-size: 15px;
+ color: #757575;
+ margin-top: 15px;
+}
+.place_text{
+   font-size: 15px;
+   margin-top: 15px;
+   line-height: 1.4;
+}
+.button_ticket{
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 15px;
+}
+.button_ticket:hover{
+    color:black;
+    background-color: #ccc;
+}
+.modal{
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-container{
+    background-color: #fff;
+    width: 80%;
+    min-height: 200px;
+    border-radius: 20px;
+}
+.modal-header{
+    text-align: center;
+    height: 129px;
+    line-height:129px;
+    background-color: #009688;
+    font-size: 30px;
+}
+.modal-close{
+    float: right;
+    padding: 14px;
+    opacity: 0.7;
+}
+.modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+}
+.modal-label{
+    display: block;
+    margin: 15px 15px;
+    font-size: 15px;
+}
+.modal-input{
+    width:95%;
+    margin: 0px 15px;
+    font-size: 15px;
+    padding: 9px 0px;
+    border:1px solid rgb(204,204,204);
+}
+#buy-ticket{
+    display: block;
+    width: 95%;
+    margin: 15px;
+    text-align:center;
+    background-color: #009688;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+}
+#buy-ticket:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.modal-footer{
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+}
+.contact{
+    background-color: #fff;
+    padding-bottom: 72px;
+}
+.contact-text{
+    display:block;
+    width: 383px;
+    margin-top: 45px;
+}
+.contact-text i{
+    display: block;
+    font-size: 18px;
+    margin: 12px 0px;
+    font-weight: 500;
+}
+.contact_main{
+    padding: 32px 0px;
+    position: relative;
+}
+.contact-input{
+    position: absolute;
+    width: 384px;
+    bottom: 24px;
+    right: 0px;
+    
+}
+.contact-input .contact-input_name{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    margin-right: 10px;
+}
+.contact-input .contact-input_email{
+    display:inline-block;
+    width: 180px;
+    height: 40px;
+}
+.contact-input .contact-input_mes{
+    display: block;
+    width: 375px;
+    height: 40px;
+    margin-top: 10px;
+}
+.send{
+    float:right;
+    background-color: black;
+    color: #fff;
+    padding: 10px 17px;
+    margin-right: 8px;
+}
+.send:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.map .image-map{
+ display: block;
+ text-align: center;
+ opacity: 0.8;
+}
+#footer .footer-smail{
+   display: block;
+   width: 300px;
+   margin: auto;
+   padding-top: 100px;
+   font-size: 24px;
+   text-align: center;
+}
+#footer .wwww{
+     font-size: 15px;
+     padding-top: 15px;
+     color: #757575;
+     padding-bottom: 100px;
+}
+
